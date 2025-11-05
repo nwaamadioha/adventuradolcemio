@@ -27,6 +27,7 @@ body {
 .nav-links {
   display: flex;
   list-style: none;
+  gap: 1rem;
 }
 
 .nav-links li {
@@ -352,5 +353,23 @@ footer {
 
   .content p {
     font-size: 0.9rem;
+  }
+
+  #notification-container {
+    left: 50%;
+    bottom: 15px;
+    transform: translateX(-50%);
+    width: 90%;
+    align-items: center;
+  }
+
+  .notification {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 14px 18px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
   }
 }
