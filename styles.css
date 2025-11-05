@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+.navbar {
+  background: #1a2a44;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: #00aaff;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/*  index page  */
+.hero {
+  background: linear-gradient(rgba(26, 42, 68, 0.8), rgba(26, 42, 68, 0.8)),
+    url("images/portrait-male-security-guard-with-radio-station.jpg")
+      center/cover no-repeat;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #194c66;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background: #306884;
+}
+
+/* ABOUT SECTION */
+.about {
+  padding: 4rem 2rem;
+  background-color: #f4f6fa;
+  text-align: center;
+}
+
+.about h2 {
+  color: #1a2a44;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* SERVICES SECTION */
+.services {
+  background-color: #f4f6fa;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.services h2 {
+  color: #1a2a44;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-item {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 30px 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.service-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.service-item h3 {
+  color: #1a2a44;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.service-item p {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 4rem 2rem;
+  background-color: #f4f6fa;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #1a2a44;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* CALL-TO-ACTION BUTTON */
+.cta-button {
+  display: inline-block;
+  background-color: #1a2a44;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #2e4c78; /* lighter shade for hover */
+}
+
+.content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.content h1 {
+  font-size: 1.5rem;
+}
+
+.content h2 {
+  font-size: 1.25rem;
+}
+
+.content h3 {
+  font-size: 1.15rem;
+}
+
+.content p {
+  font-size: 1rem;
+}
+
+/*  about page  */
+.about-card {
+  margin-top: 2rem;
+}
+
+.about-card ol {
+  padding-left: 1.5rem;
+}
+
+.about-card ul {
+  padding-left: 2rem;
+}
+
+/* service page  */
+.service-card {
+  margin-top: 2rem;
+}
+
+.service-card ol {
+  padding-left: 1.5rem;
+}
+
+.service-card ul {
+  padding-left: 2rem;
+}
+
+/* contact page  */
+.contact-info {
+  margin: 2rem 0;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 2rem 0;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  background: #194c66;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #306884;
+}
+
+/* footer  */
+footer {
+  background: #1a2a44;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Notification container */
+#notification-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+}
+
+/* Notification toast */
+.notification {
+  background-color: #1a2a44;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-size: 0.95rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.4s forwards, fadeOut 0.4s ease 3s forwards;
+}
+
+/* Animations */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #1a2a44;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .content h1 {
+    font-size: 1.25rem;
+  }
+
+  .content h2 {
+    font-size: 1.15rem;
+  }
+
+  .content h3 {
+    font-size: 1rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+  }
+}
